@@ -12,5 +12,9 @@ app.get('/', (req, res) => {
   res.send('Hello World');
 });
 
+app.get('/nodejs', (req, res) => {
+  res.send('Hello World From nodejs');
+});
+
 app.listen(PORT, HOST);
 console.log(`Running on http://${HOST}:${PORT}`);
